@@ -525,7 +525,6 @@ class Board(Bitmap):
         """
         Creates a copy of the board; can be used to simulate possible moves.
         """
-
         board = Board(self.width, self.height, self.score)
         board.cells = set(self)
 

@@ -233,8 +233,8 @@ class RandomPlayer(Player):
 
     def choose_action(self, board):
         return self.random.choice([
-            Direction.Left,
             Direction.Right,
+            Direction.Left,
             Direction.Down,
             Rotation.Anticlockwise,
             Rotation.Clockwise,

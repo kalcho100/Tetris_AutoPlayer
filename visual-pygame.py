@@ -104,7 +104,6 @@ def check_stop():
         elif event.type == pygame.QUIT:
             raise SystemExit
 
-
 def run():
     board = Board(BOARD_WIDTH, BOARD_HEIGHT)
     adversary = RandomAdversary(DEFAULT_SEED)

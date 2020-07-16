@@ -8,7 +8,6 @@ from time import sleep
 import curses
 import curses.ascii
 
-
 COLOR_WALL = 1
 COLOR_BLOCK = 2
 COLOR_CELL = 3

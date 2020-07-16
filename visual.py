@@ -153,10 +153,14 @@ def run():
     board = Board(BOARD_WIDTH, BOARD_HEIGHT)
 
     def runner():
-        for move in board.run(player, adversary):
+        k = board.run(player, adversary)
+        # print(k)
+        if not k:
+            root.quit()
+        for move in k:
             # When not playing manually, allow some time to see the move.
             if not args.manual:
-                sleep(0g)
+                sleep(0)
 
     Visual(board)
 

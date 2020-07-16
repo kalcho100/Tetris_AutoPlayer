@@ -42,7 +42,6 @@ board = Board(BOARD_WIDTH, BOARD_HEIGHT)
 player = RemotePlayer()
 adversary = RandomAdversary(getenv('SEED'), BLOCK_LIMIT)
 
-
 score = 0
 try:
     for move in board.run(player, adversary):

@@ -4,7 +4,6 @@ from constants import BOARD_HEIGHT, BOARD_WIDTH, PREFIX
 from exceptions import UnknownInstructionException
 from player import SelectedPlayer
 
-
 class RemoteAdversary(Adversary):
     def choose_block(self, board):
         while True:
